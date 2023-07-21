@@ -3,7 +3,7 @@
 # Runs GHC unit tests before DockerHub push.
 #
 # Author: Just van den Broecke - 2021
-#
+# Editor: Aliaksei Lyshchyk
 name: Docker Build ⚓
 
 on:
@@ -33,7 +33,7 @@ jobs:
       - name: Prepare 📦
         id: prep
         run: |
-          DOCKER_IMAGE=justb4/jmeter
+          DOCKER_IMAGE=xtotut/jmeter
           VERSION="5.6.2"
           TAGS="${DOCKER_IMAGE}:${VERSION}"
           echo ::set-output name=image::${DOCKER_IMAGE}
